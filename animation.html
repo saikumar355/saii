@@ -1,0 +1,44 @@
+
+<html lang="en">
+<head>
+
+  <title>Square Animation</title>
+  <style>
+   
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: yellow;
+    }
+
+    #animateBox {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      position: absolute;
+      top: 50%; /* Start in the center */
+      left: 0;  /* Start from the left side */
+      transition: left 2s ease-in-out; /* Smooth transition for movement */
+    }
+  </style>
+</head>
+<body>
+  <div id="animateBox"></div>
+
+  <script>
+    
+    window.onload = () => {
+      const box = document.getElementById("animateBox");
+
+     
+      setTimeout(() => {
+        box.style.left = "93%"; 	
+      }, 1000); 
+    };
+  </script>
+</body>
+</html>
